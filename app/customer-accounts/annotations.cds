@@ -47,7 +47,6 @@ annotate service.Contacts with @(
             $Type                  : 'UI.DataField',
             Value                  : functions.function_ID,
             Label                  : '{i18n>Function}',
-            ![@Common.FieldControl]: #Mandatory,
         },
         {
             $Type: 'UI.DataField',
@@ -61,7 +60,6 @@ annotate service.Contacts with @(
                 $Type                  : 'UI.DataField',
                 Value                  : functions.function_ID,
                 Label                  : '{i18n>Function}',
-                ![@Common.FieldControl]: #Mandatory,
             },
             {
                 $Type: 'UI.DataField',
@@ -104,6 +102,5 @@ annotate service.JobContactFunctions with {
             $value                : function.name,
             ![@UI.TextArrangement]: #TextOnly,
         },
-        Common.FieldControl            : #Mandatory,
     )
 };

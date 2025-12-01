@@ -17,7 +17,7 @@ entity Contacts : cuid, managed {
 
 entity JobContactFunctions : cuid, managed {
     contact  : Association to Contacts;
-    function : Association to ContactFunctions;   // FK column function_ID will be generated
+    function : Association to ContactFunctions; 
 }
 
 entity ContactFunctions : cuid, managed {
