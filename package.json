@@ -13,7 +13,8 @@
   "scripts": {
     "start": "cds-serve",
     "watch-contact-functions": "cds watch --open contactfunctions/index.html?sap-ui-xx-viewCache=false --livereload false",
-    "watch-customer-accounts": "cds watch --open customeraccounts/index.html?sap-ui-xx-viewCache=false --livereload false"
+    "watch-customer-accounts": "cds watch --open customeraccounts/index.html?sap-ui-xx-viewCache=false --livereload false",
+    "watch-cores": "cds watch --open cores/index.html?sap-ui-xx-viewCache=false --livereload false"
   },
   "private": true,
   "workspaces": [
@@ -21,6 +22,7 @@
   ],
   "sapux": [
     "app/contact-functions",
-    "app/customer-accounts"
+    "app/customer-accounts",
+    "app/cores"
   ]
 }
