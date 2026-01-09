@@ -49,7 +49,8 @@
       "libs": {
         "sap.m": {},
         "sap.ui.core": {},
-        "sap.fe.templates": {}
+        "sap.fe.templates": {},
+        "sap.f": {}
       }
     },
     "contentDensities": {
@@ -81,17 +82,28 @@
       "css": []
     },
     "routing": {
-      "config": {},
+      "config": {
+        "flexibleColumnLayout": {
+          "defaultTwoColumnLayoutType": "TwoColumnsBeginExpanded",
+          "defaultThreeColumnLayoutType": "ThreeColumnsMidExpanded"
+        },
+        "routerClass": "sap.f.routing.Router"
+      },
       "routes": [
         {
           "pattern": ":?query:",
           "name": "CoresList",
-          "target": "CoresList"
+          "target": [
+            "CoresList"
+          ]
         },
         {
           "pattern": "Cores({key}):?query:",
           "name": "CoresObjectPage",
-          "target": "CoresObjectPage"
+          "target": [
+            "CoresList",
+            "CoresObjectPage"
+          ]
         }
       ],
       "targets": {
@@ -116,9 +128,12 @@
                     "type": "ResponsiveTable"
                   }
                 }
-              }
+              },
+              "initialLoad": "Enabled"
             }
-          }
+          },
+          "controlAggregation": "beginColumnPages",
+          "contextPattern": ""
         },
         "CoresObjectPage": {
           "type": "Component",
@@ -129,13 +144,28 @@
               "editableHeaderContent": false,
               "contextPath": "/Cores"
             }
-          }
+          },
+          "controlAggregation": "midColumnPages",
+          "contextPattern": "/Cores({key})"
         }
       }
+    },
+    "rootView": {
+      "viewName": "sap.fe.templates.RootContainer.view.Fcl",
+      "type": "XML",
+      "async": true,
+      "id": "appRootView"
     }
   },
   "sap.fiori": {
     "registrationIds": [],
     "archeType": "transactional"
+  },
+  "sap.fe": {
+    "macros": {
+      "table": {
+        "defaultCreationMode": "InlineCreationRows"
+      }
+    }
   }
 }
