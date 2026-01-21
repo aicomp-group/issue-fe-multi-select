@@ -1,5 +1,6 @@
-innerDiameter,innerDiameterUnit_code
-25.00002,mm
-32.500032,mm
-40.123432,mm
+innerDiameter,innerDiameterUnit_code,wallThickness,wallThicknessUnit_code
+10.00001,mm,2.000,mm
+15.500015,mm,3.750,mm
+20.00002,mm,4.000,mm
+
 

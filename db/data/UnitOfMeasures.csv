@@ -1,4 +1,45 @@
-code,name,scale
-mm,Millimeter,6
-cm,Centimeter,6
-m,Meter,6
+code,name,descr,searchAlias,dimension,scale
+m,meter,meter,,Length,3
+kg,kilogram,kilogram,,Mass,3
+s,second,second,,Time,3
+cm,centimeter,centimeter,,Length,3
+mm,millimeter,millimeter,,Length,3
+µm,micrometer,micrometer,,Length,3
+in,inch,inch,,Length,3
+ft,foot,foot,,Length,3
+mil,mil,mil,,Length,3
+m²,square meter,square meter,m2,Surface,3
+cm²,square centimeter,square centimeter,cm2,Surface,3
+in²,square inch,square inch,in2,Surface,3
+ft²,square foot,square foot,ft2,Surface,3
+MSI,thousand square inch,thousand square inch,,Surface,3
+cm³,cubic centimeter,cubic centimeter,cm3,Volume,3
+BCM,billion cubic microns,billion cubic microns,,Volume,3
+g,gram,gram,,Mass,3
+lb,pound,pound,,Mass,3
+oz,ounce,ounce,,Mass,3
+kg/h,kilogram per hour,kilogram per hour,,MassFlowRate,3
+t/h,ton per hour,ton per hour,,MassFlowRate,3
+g/cm³,grams per cubic centimeter,grams per cubic centimeter,g/cm3,Density,4
+lb/in³,pounds per cubic inch,pounds per cubic inch,lb/in3,Density,4
+g/m²,grams per square meter,grams per square meter,g/m2,MassCoverage,3
+lb/ft²,pounds per square foot,pounds per square foot,lb/ft2,MassCoverage,3
+lb/MSI,pounds per 1.000 square inches,pounds per 1.000 square inches,,MassCoverage,3
+min,minute,minute,,Time,3
+h,hour,hour,,Time,3
+m/min,meters per minute,meters per minute,,Speed,3
+m²/s,square meters per second,square meters per second,m2/s,KinematicViscosity,3
+m²/h,square meters per hour,square meters per hour,m2/h,KinematicViscosity,3
+N,newton,newton,,Force,3
+Pa,pascal,pascal,,Pressure,3
+kPa,kilopascal,kilopascal,,Pressure,3
+psi,pounds per square inch,pounds per square inch,,Pressure,3
+Nm,newton meter,newton meter,,Energy,3
+kNm,kilonewton meter,kilonewton meter,,Energy,3
+J,joule,joule,,Energy,3
+W,watt,watt,,Power,3
+KWH,kilowatt hour,kilowatt hour,,Energy,3
+kN/m,kilonewton per meter,kilonewton per meter,,SurfaceTension,3
+GJ,gigajoule,gigajoule,,Energy,3
+PC,piece,piece,,Count,3
+%,percent,percent,,Count,3

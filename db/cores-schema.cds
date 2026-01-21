@@ -1,18 +1,16 @@
 using {
   cuid,
   managed,
-  sap.common.CodeList
 } from '@sap/cds/common';
 
-entity Cores : cuid, managed {
-  innerDiameter     : Decimal(15, 10)               @mandatory;
-  innerDiameterUnit : Association to UnitOfMeasures @mandatory;
-}
+using {
+  UnitOfMeasureLength,
+  UnitOfMeasureDensity,
+} from './cds-reuse/common';
 
-entity UnitOfMeasures : CodeList {
-  key code  : String(10) @(Common: {
-        UnitSpecificScale: scale,
-        Text             : name
-      });
-      scale : Integer;
+entity Cores : cuid, managed {
+  innerDiameter     : Decimal(15, 10)      @mandatory;
+  innerDiameterUnit : UnitOfMeasureDensity @mandatory;
+  wallThickness     : Decimal              @mandatory;
+  wallThicknessUnit : UnitOfMeasureLength  @mandatory;
 }
